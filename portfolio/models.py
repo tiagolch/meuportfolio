@@ -5,7 +5,7 @@ class Pessoa(models.Model):
     sobrenome = models.CharField( max_length=25, verbose_name='Sobrenome')
     nome_visualizacao = models.CharField(max_length=50, verbose_name='Nome de Visualização')
     email = models.EmailField(verbose_name='Email')
-    imagem_perfil = models.CharField(max_length=150)
+    imagem_perfil = models.CharField(max_length=200)
     ativo = models.BooleanField(default=True)
     data_criacao = models.DateTimeField(auto_now_add=True)
     data_atualizacao = models.DateTimeField(auto_now=True)
