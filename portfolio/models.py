@@ -21,3 +21,12 @@ class Pessoa(models.Model):
 
     def get_data_atualizacao(self):
         return self.data_atualizacao.strftime('%d/%m/%Y')
+
+
+class SobreMim(models.Model):
+    sobremim = models.CharField(max_length=2000, verbose_name='Sobre Mim')
+
+    def __str__(self):
+        return self.sobremim
+
+    
