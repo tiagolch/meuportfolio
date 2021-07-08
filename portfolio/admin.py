@@ -10,7 +10,7 @@ class PessoaAdmin(admin.ModelAdmin):
                     'get_data_criacao',
                     'get_data_atualizacao',
                     'ativo']
-    list_filter = ['get_data_criacao',
+    list_filter = ['data_criacao',
                    'ativo']
     search_fields = ['nome',
                      'sobrenome',
