@@ -30,3 +30,9 @@ class SobreMim(models.Model):
         return self.sobremim
 
     
+class CargoPretendido(models.Model):
+    cargo = models.CharField(max_length=50, verbose_name='Cargo Pretendido')
+
+    def __str__(self):
+
+        return self.cargo
