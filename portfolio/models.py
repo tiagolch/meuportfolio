@@ -30,3 +30,10 @@ class SobreMim(models.Model):
         return self.sobremim
 
     
+class RedeSocial(models.Model):
+    linkedin = models.CharField(max_length=300, verbose_name='LinkedIn')
+    github = models.CharField(max_length=300, verbose_name='GitHub')
+    whatsapp = models.CharField(max_length=14, verbose_name='Whatsapp')
+
+    def __str__(self):
+        return self.linkedin
