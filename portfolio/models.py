@@ -37,7 +37,7 @@ class RedeSocial(models.Model):
 
     def __str__(self):
         return self.linkedin
-=======
+
 class CargoPretendido(models.Model):
     cargo = models.CharField(max_length=50, verbose_name='Cargo Pretendido')
 
