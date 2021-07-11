@@ -29,8 +29,7 @@ class SobreMim(models.Model):
     def __str__(self):
         return self.sobremim
 
-    
-<<<<<<< HEAD
+
 class RedeSocial(models.Model):
     linkedin = models.CharField(max_length=300, verbose_name='LinkedIn')
     github = models.CharField(max_length=300, verbose_name='GitHub')
@@ -45,4 +44,4 @@ class CargoPretendido(models.Model):
     def __str__(self):
 
         return self.cargo
->>>>>>> 999caacb5893fada876a27122d82330667d318b0
+
