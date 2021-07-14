@@ -42,6 +42,26 @@ class CargoPretendido(models.Model):
     cargo = models.CharField(max_length=50, verbose_name='Cargo Pretendido')
 
     def __str__(self):
-
         return self.cargo
 
+
+class Experiencia(models.Model):
+    cargo = models.CharField(max_length=25, verbose_name='Cargo')
+    empresa = models.CharField(max_length=100, verbose_name='Empresa')
+    descricao = models.CharField(max_length=500, verbose_name='Descrição')
+    data_inicio = models.DateField(verbose_name='Data de Inicio')
+    data_final = models.DateField(blank=True, null=True, verbose_name='Data de fim')
+    atual = models.BooleanField(default=False, verbose_name='Atual')
+
+    class Meta:
+        verbose_plural = 'Experiencias'
+
+    def __str__(self):
+        return self.cargo
+
+    def get_data_inicio(self):
+        return self.data_criacao.strftime('%m/%Y')
+
+    def get_data_final(self):
+        return self.data_final.strftime('%m/%Y')
+        
