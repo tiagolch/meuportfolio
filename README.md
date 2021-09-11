@@ -2,6 +2,14 @@
 Um projeto desenvolvido em parceria com intuito de ser open source. Essa idéa surgiu para a criação e edição
 de uma pagina a ser utilizada como portfolio ou currículo web.
 
+É necessário criar o ambiente virtual antes de prosseguir.
+
+` virtualenv venv `
+
+Em seguida ativar o ambiente virtual.
+
+` source venv/bin/activate `
+
 Os pré-requisitos é Ter instalado Python 3+, pip e instalar o requirements do projeto.
 
 `pip install -r requirements.txt`
